@@ -1,52 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 170" width="100%" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 185" width="100%" height="185">
   <defs>
-    <linearGradient id="cardBg_dark_1-dockerward" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#151F2C" />
-      <stop offset="100%" stop-color="#182333" />
+    <linearGradient id="cardBg_dark_1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121A24" />
+      <stop offset="100%" stop-color="#162231" />
     </linearGradient>
-    <radialGradient id="cardGlow_dark_1-dockerward" cx="90%" cy="15%" r="45%">
-      <stop offset="0%" stop-color="#64B5F6" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#151F2C" stop-opacity="0" />
+    <radialGradient id="cardGlow_dark_1" cx="85%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#00D2B4" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#121A24" stop-opacity="0" />
     </radialGradient>
+    <pattern id="cardGrid_1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+    </pattern>
   </defs>
 
-  <rect x="1.5" y="1.5" width="427" height="167" rx="14" fill="url(#cardBg_dark_1-dockerward)" stroke="#1D2A3B" stroke-width="1.5" />
-  <rect x="1.5" y="1.5" width="427" height="167" rx="14" fill="url(#cardGlow_dark_1-dockerward)" />
-  <line x1="24" y1="1.5" x2="120" y2="1.5" stroke="#64B5F6" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Card Surface -->
+  <rect x="1.5" y="1.5" width="437" height="182" rx="14" fill="url(#cardBg_dark_1)" stroke="#1D2A3B" stroke-width="1.5" />
+  <rect x="1.5" y="1.5" width="437" height="182" rx="14" fill="url(#cardGrid_1)" />
+  <rect x="1.5" y="1.5" width="437" height="182" rx="14" fill="url(#cardGlow_dark_1)" />
+  
+  <!-- Glowing Top Accent Line -->
+  <line x1="22" y1="1.5" x2="140" y2="1.5" stroke="#00D2B4" stroke-width="3" stroke-linecap="round" />
 
-  <!-- Top Category Badge -->
-  <g transform="translate(24, 20)">
-    <text font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#64B5F6" letter-spacing="0.8px">RUNTIME CONTAINER SECURITY</text>
+  <!-- Top Category & Metric Badge -->
+  <g transform="translate(22, 22)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#00D2B4" letter-spacing="0.8px">CONTAINER RUNTIME AUDIT</text>
+  </g>
+  <g transform="translate(418, 22)">
+    <rect x="-115" y="-12" width="115" height="19" rx="9" fill="#182333" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <circle cx="-105" cy="-2.5" r="3" fill="#00D2B4" />
+    <text x="-95" y="1" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#F3F6F9">100% Rules Pass</text>
   </g>
 
-  <!-- Title & Icon -->
-  <g transform="translate(24, 52)">
-    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="17" font-weight="800" fill="#F3F6F9">DockerWard</text>
-    <text x="375" y="0" font-size="16" text-anchor="end">🐳</text>
+  <!-- Title & Domain Icon -->
+  <g transform="translate(22, 58)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', -apple-system, system-ui, sans-serif" font-size="18" font-weight="800" fill="#F3F6F9" letter-spacing="-0.3px">DockerWard</text>
+    <g transform="translate(372, -18)">
+      <g stroke="#00D2B4" stroke-width="1.6" fill="none">
+          <rect x="0" y="6" width="6" height="5" rx="1" fill="#00D2B4" fill-opacity="0.3" />
+          <rect x="8" y="6" width="6" height="5" rx="1" fill="#00D2B4" fill-opacity="0.3" />
+          <rect x="16" y="6" width="6" height="5" rx="1" fill="#00D2B4" fill-opacity="0.3" />
+          <rect x="8" y="0" width="6" height="5" rx="1" fill="#00D2B4" fill-opacity="0.3" />
+          <path d="M -4 14 C 2 21, 24 21, 28 14 C 28 12, 26 11, 22 12" />
+        </g>
+    </g>
+  </g>
+
+  <!-- Subtitle / Metric Detail -->
+  <g transform="translate(22, 76)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#00D2B4">✦ CIS Docker v1.6.0</text>
   </g>
 
   <!-- Description -->
-  <g transform="translate(24, 76)">
-    <text x="0" y="12" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#CBD5E1">Runtime security audit engine for Docker Engine API.</text>
-    <text x="0" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#94A3B8">Audits live containers against CIS Benchmark v1.6.0 with SARIF.</text>
+  <g transform="translate(22, 98)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#CBD5E1">Runtime security audit engine for Docker Engine API.</text>
+    <text x="0" y="18" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#94A3B8">Audits live containers against CIS Benchmark v1.6.0 with SARIF.</text>
   </g>
 
-  <!-- Tags -->
+  <!-- Tech Stack Tags -->
   
-      <g transform="translate(24, 132)">
-        <rect x="0" y="0" width="124.5" height="22" rx="6" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
-        <text x="62.25" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#CBD5E1" font-weight="500" text-anchor="middle">CIS Docker v1.6.0</text>
+      <g transform="translate(22, 150)">
+        <rect x="0" y="0" width="126.5" height="22" rx="6" fill="#182333" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#00D2B4" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#CBD5E1" font-weight="500">Docker Engine API</text>
       </g>
-      <g transform="translate(156.5, 132)">
-        <rect x="0" y="0" width="124.5" height="22" rx="6" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
-        <text x="62.25" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#CBD5E1" font-weight="500" text-anchor="middle">cgroups &amp; seccomp</text>
+      <g transform="translate(156.5, 150)">
+        <rect x="0" y="0" width="146.0" height="22" rx="6" fill="#182333" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#00D2B4" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#CBD5E1" font-weight="500">CIS Benchmark v1.6.0</text>
       </g>
-      <g transform="translate(289.0, 132)">
-        <rect x="0" y="0" width="85.5" height="22" rx="6" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
-        <text x="42.75" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#CBD5E1" font-weight="500" text-anchor="middle">SARIF 2.1.0</text>
+      <g transform="translate(310.5, 150)">
+        <rect x="0" y="0" width="126.5" height="22" rx="6" fill="#182333" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#00D2B4" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#CBD5E1" font-weight="500">cgroups &amp; seccomp</text>
       </g>
-      <g transform="translate(382.5, 132)">
-        <rect x="0" y="0" width="66.0" height="22" rx="6" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
-        <text x="33.0" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#CBD5E1" font-weight="500" text-anchor="middle">71 Tests</text>
+      <g transform="translate(445.0, 150)">
+        <rect x="0" y="0" width="68.0" height="22" rx="6" fill="#182333" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#00D2B4" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#CBD5E1" font-weight="500">71 Tests</text>
       </g>
 </svg>

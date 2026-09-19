@@ -1,52 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 170" width="100%" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 185" width="100%" height="185">
   <defs>
-    <linearGradient id="cardBg_light_3-secuscan-api" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="cardBg_light_3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" />
       <stop offset="100%" stop-color="#FBF9F4" />
     </linearGradient>
-    <radialGradient id="cardGlow_light_3-secuscan-api" cx="90%" cy="15%" r="45%">
-      <stop offset="0%" stop-color="#2A6647" stop-opacity="0.08" />
+    <radialGradient id="cardGlow_light_3" cx="85%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#2A6647" stop-opacity="0.10" />
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
     </radialGradient>
   </defs>
 
-  <rect x="1.5" y="1.5" width="427" height="167" rx="14" fill="url(#cardBg_light_3-secuscan-api)" stroke="#E5E7EB" stroke-width="1.5" />
-  <rect x="1.5" y="1.5" width="427" height="167" rx="14" fill="url(#cardGlow_light_3-secuscan-api)" />
-  <line x1="24" y1="1.5" x2="120" y2="1.5" stroke="#2A6647" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Card Surface -->
+  <rect x="1.5" y="1.5" width="437" height="182" rx="14" fill="url(#cardBg_light_3)" stroke="#CCD2DA" stroke-width="1.5" />
+  <rect x="1.5" y="1.5" width="437" height="182" rx="14" fill="url(#cardGlow_light_3)" />
+  
+  <!-- Glowing Top Accent Line -->
+  <line x1="22" y1="1.5" x2="140" y2="1.5" stroke="#2A6647" stroke-width="3" stroke-linecap="round" />
 
-  <!-- Top Category Badge -->
-  <g transform="translate(24, 20)">
-    <text font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2A6647" letter-spacing="0.8px">PERIMETER ATTACK SURFACE (EASM)</text>
+  <!-- Top Category & Metric Badge -->
+  <g transform="translate(22, 22)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2A6647" letter-spacing="0.8px">EASM &amp; PERIMETER DEFENSE</text>
+  </g>
+  <g transform="translate(418, 22)">
+    <rect x="-115" y="-12" width="115" height="19" rx="9" fill="#F3ECE1" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="-105" cy="-2.5" r="3" fill="#2A6647" />
+    <text x="-95" y="1" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#1C232B">Grade A+ (98/100)</text>
   </g>
 
-  <!-- Title & Icon -->
-  <g transform="translate(24, 52)">
-    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="17" font-weight="800" fill="#1C232B">secuscan-api</text>
-    <text x="375" y="0" font-size="16" text-anchor="end">🛡️</text>
+  <!-- Title & Domain Icon -->
+  <g transform="translate(22, 58)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', -apple-system, system-ui, sans-serif" font-size="18" font-weight="800" fill="#1C232B" letter-spacing="-0.3px">secuscan-api</text>
+    <g transform="translate(372, -18)">
+      <g stroke="#2A6647" stroke-width="1.6" fill="none">
+          <circle cx="12" cy="12" r="10" />
+          <circle cx="12" cy="12" r="6" stroke-dasharray="2,2" />
+          <circle cx="12" cy="12" r="2" fill="#2A6647" />
+          <line x1="12" y1="12" x2="19" y2="5" stroke-linecap="round" />
+        </g>
+    </g>
+  </g>
+
+  <!-- Subtitle / Metric Detail -->
+  <g transform="translate(22, 76)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#2A6647">✦ Anti-SSRF Guard</text>
   </g>
 
   <!-- Description -->
-  <g transform="translate(24, 76)">
-    <text x="0" y="12" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#3B4654">High-performance async FastAPI backend for perimeter auditing.</text>
-    <text x="0" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#566373">Deep TLS/SSL check, anti-SSRF, socket anti-rebinding &amp; SARIF export.</text>
+  <g transform="translate(22, 98)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#3B4654">Asynchronous microservices API for External Attack Surface.</text>
+    <text x="0" y="18" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#5A6A80">FastAPI + Celery + PostgreSQL 16 with Anti-SSRF &amp; DNS rebinding guard.</text>
   </g>
 
-  <!-- Tags -->
+  <!-- Tech Stack Tags -->
   
-      <g transform="translate(24, 132)">
-        <rect x="0" y="0" width="118.0" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
-        <text x="59.0" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">FastAPI &amp; Docker</text>
+      <g transform="translate(22, 150)">
+        <rect x="0" y="0" width="100.5" height="22" rx="6" fill="#F7F3EB" stroke="#E2E8F0" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#2A6647" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#3B4654" font-weight="600">FastAPI Async</text>
       </g>
-      <g transform="translate(150.0, 132)">
-        <rect x="0" y="0" width="111.5" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
-        <text x="55.75" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">Anti-SSRF Guard</text>
+      <g transform="translate(130.5, 150)">
+        <rect x="0" y="0" width="100.5" height="22" rx="6" fill="#F7F3EB" stroke="#E2E8F0" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#2A6647" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#3B4654" font-weight="600">PostgreSQL 16</text>
       </g>
-      <g transform="translate(269.5, 132)">
-        <rect x="0" y="0" width="105.0" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
-        <text x="52.5" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">Anti-Rebinding</text>
+      <g transform="translate(239.0, 150)">
+        <rect x="0" y="0" width="94.0" height="22" rx="6" fill="#F7F3EB" stroke="#E2E8F0" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#2A6647" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#3B4654" font-weight="600">Celery Queue</text>
       </g>
-      <g transform="translate(382.5, 132)">
-        <rect x="0" y="0" width="66.0" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
-        <text x="33.0" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">86 Tests</text>
+      <g transform="translate(341.0, 150)">
+        <rect x="0" y="0" width="68.0" height="22" rx="6" fill="#F7F3EB" stroke="#E2E8F0" stroke-width="1" />
+        <circle cx="8" cy="11" r="2.5" fill="#2A6647" />
+        <text x="16" y="14.5" font-family="'JetBrains Mono', monospace" font-size="9" fill="#3B4654" font-weight="600">86 Tests</text>
       </g>
 </svg>

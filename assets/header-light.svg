@@ -1,91 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 370" width="100%" height="100%">
   <defs>
-    <!-- Background Gradients: Ghibli Parchment & Watercolor -->
-    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Ghibli Parchment & Watercolor Gradient -->
+    <linearGradient id="skyGradL" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FBF9F4" />
-      <stop offset="50%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#F3ECE1" />
+      <stop offset="40%" stop-color="#FFFFFF" />
+      <stop offset="80%" stop-color="#F3ECE1" />
+      <stop offset="100%" stop-color="#EAE0D1" />
     </linearGradient>
 
-    <!-- Terracotta Warm Glow -->
-    <radialGradient id="terracottaGlow" cx="85%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#B84E26" stop-opacity="0.10" />
+    <!-- Terracotta Glow -->
+    <radialGradient id="sunsetGlowL" cx="22%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="#B84E26" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#FBF9F4" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Forest Green Soft Glow -->
-    <radialGradient id="forestGlow" cx="15%" cy="85%" r="45%">
-      <stop offset="0%" stop-color="#2A6647" stop-opacity="0.08" />
+    <!-- Deep Forest Glow -->
+    <radialGradient id="forestGlowL" cx="82%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#2A6647" stop-opacity="0.12" />
       <stop offset="100%" stop-color="#FBF9F4" stop-opacity="0" />
     </radialGradient>
+
+    <!-- Terminal Window Light Gradient -->
+    <linearGradient id="termGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#F7F3EB" stop-opacity="0.98" />
+    </linearGradient>
+
+    <pattern id="headerGridL" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(45,55,72,0.04)" stroke-width="1" />
+    </pattern>
   </defs>
 
   <style>
-    .title-l { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 34px; fill: #1C232B; letter-spacing: -0.5px; }
-    .tagline-l { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 15px; fill: #3B4654; }
-    .mono-l { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; fill: #566373; }
-    .badge-text-l { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; }
-    .status-text-l { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #2A6647; letter-spacing: 0.5px; }
+    .h-title-l { font-family: 'Plus Jakarta Sans', -apple-system, system-ui, sans-serif; font-weight: 800; font-size: 38px; fill: #1C232B; letter-spacing: -1px; }
+    .h-sub-l { font-family: 'Plus Jakarta Sans', -apple-system, system-ui, sans-serif; font-weight: 600; font-size: 15px; fill: #B84E26; letter-spacing: 0.2px; }
+    .h-pitch-l { font-family: 'Plus Jakarta Sans', -apple-system, system-ui, sans-serif; font-weight: 400; font-size: 13px; fill: #3B4654; }
+    .term-code-l { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11px; }
+    .cursor-l { animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
   </style>
 
-  <!-- Base Card -->
-  <rect x="2" y="2" width="896" height="276" rx="18" fill="url(#bgGradLight)" stroke="#E5E7EB" stroke-width="1.5" />
-  <rect x="2" y="2" width="896" height="276" rx="18" fill="url(#terracottaGlow)" />
-  <rect x="2" y="2" width="896" height="276" rx="18" fill="url(#forestGlow)" />
+  <!-- Canvas Background -->
+  <rect x="2" y="2" width="916" height="366" rx="20" fill="url(#skyGradL)" stroke="#CCD2DA" stroke-width="1.5" />
+  <rect x="2" y="2" width="916" height="366" rx="20" fill="url(#headerGridL)" />
+  <rect x="2" y="2" width="916" height="366" rx="20" fill="url(#sunsetGlowL)" />
+  <rect x="2" y="2" width="916" height="366" rx="20" fill="url(#forestGlowL)" />
 
-  <!-- Subtle Constellation Lines -->
-  <g stroke="#3B4654" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3,3">
-    <line x1="50" y1="90" x2="250" y2="90" />
-    <line x1="250" y1="90" x2="330" y2="40" />
-    <line x1="650" y1="180" x2="820" y2="180" />
+  <!-- Base Landscape Silhouette -->
+  <path d="M 2 368 Q 240 325, 480 348 T 918 335 L 918 368 L 2 368 Z" fill="#E8DEC9" opacity="0.6" />
+  <path d="M 2 368 Q 280 340, 620 358 T 918 348 L 918 368 L 2 368 Z" fill="#DDD1B8" opacity="0.4" />
+
+  <!-- Wind Turbine / Antenna silhouettes in the distant meadow -->
+  <g stroke="#266A8C" stroke-opacity="0.2" stroke-width="1">
+    <line x1="830" y1="332" x2="830" y2="305" />
+    <circle cx="830" cy="305" r="1.5" fill="#B84E26" />
+    <line x1="880" y1="340" x2="880" y2="318" />
+    <circle cx="880" cy="318" r="1.5" fill="#2A6647" />
   </g>
 
-  <!-- Top System Badge -->
-  <g transform="translate(50, 32)">
-    <rect x="0" y="0" width="310" height="26" rx="13" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
-    <circle cx="18" cy="13" r="4.5" fill="#2A6647" />
-    <circle cx="18" cy="13" r="2" fill="#FFFFFF" />
-    <text x="32" y="17" class="status-text-l">DEVOPS &amp; RUNTIME SECURITY</text>
-    <text x="212" y="17" class="mono-l" fill="#566373">·</text>
-    <text x="224" y="17" class="mono-l" fill="#B84E26">h3n-x.dev</text>
+  <!-- ================= LEFT COLUMN: HERO IDENTITY ================= -->
+  <!-- Operational Status Badge -->
+  <g transform="translate(38, 30)">
+    <rect x="0" y="0" width="295" height="28" rx="14" fill="#FFFFFF" stroke="#2A6647" stroke-width="1.2" opacity="0.9" />
+    <circle cx="14" cy="14" r="5" fill="#2A6647" />
+    <circle cx="14" cy="14" r="2" fill="#FFFFFF" />
+    <text x="28" y="18" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2A6647" letter-spacing="0.8px">SYSTEM RUNTIME: HARDENED</text>
+    <text x="218" y="18" font-family="'JetBrains Mono', monospace" font-size="10" fill="#CBD5E1">|</text>
+    <text x="230" y="18" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#B84E26">0 CVEs</text>
   </g>
 
-  <!-- Header Content -->
-  <text x="50" y="105" class="title-l">Henry Pacheco</text>
-  <text x="315" y="105" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="500" fill="#566373">/ h3n-x</text>
+  <!-- Name & Handle -->
+  <g transform="translate(38, 96)">
+    <text x="0" y="0" class="h-title-l">Henry Pacheco</text>
+    <text x="312" y="-3" font-family="'JetBrains Mono', monospace" font-size="19" font-weight="500" fill="#718096">/ h3n-x</text>
+  </g>
 
-  <text x="50" y="136" class="tagline-l">
-    DevOps &amp; Infrastructure Engineer <tspan fill="#B84E26">✦</tspan> Linux Internals, Hardened Containers &amp; DevSecOps
-  </text>
-  <text x="50" y="160" class="mono-l" fill="#566373">
-    Automating resilient systems from kernel primitives to strict CI/CD quality gates.
-  </text>
+  <!-- Role Subtitle -->
+  <g transform="translate(38, 126)">
+    <text x="0" y="0" class="h-sub-l">DevOps &amp; Linux Infrastructure Engineer</text>
+    <text x="338" y="0" font-family="'JetBrains Mono', monospace" font-size="13" fill="#2A6647">✦ SRE &amp; DevSecOps</text>
+  </g>
 
-  <!-- Bottom Pills -->
-  <g transform="translate(50, 195)">
+  <!-- Engineering Pitch -->
+  <g transform="translate(38, 156)">
+    <text x="0" y="0" class="h-pitch-l">Eliminating operational fragility through predictable Linux automation,</text>
+    <text x="0" y="21" class="h-pitch-l">container runtime security (CIS Benchmark), and SARIF CI/CD gates.</text>
+  </g>
+
+  <!-- Tech Stack Highlights Pills -->
+  <g transform="translate(38, 212)">
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="185" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
-      <circle cx="18" cy="17" r="4" fill="#3B4654" />
-      <text x="30" y="21" class="badge-text-l" fill="#1C232B">Linux &amp; systemd</text>
-      <text x="142" y="21" class="mono-l">cgroups</text>
+      <rect x="0" y="0" width="105" height="30" rx="8" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+      <circle cx="12" cy="15" r="3.5" fill="#266A8C" />
+      <text x="24" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1C232B">Arch Linux</text>
     </g>
-    <g transform="translate(197, 0)">
-      <rect x="0" y="0" width="195" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
-      <circle cx="18" cy="17" r="4" fill="#266A8C" />
-      <text x="30" y="21" class="badge-text-l" fill="#1C232B">Docker &amp; CIS v1.6</text>
-      <text x="156" y="21" class="mono-l" fill="#266A8C">audit</text>
+    <g transform="translate(113, 0)">
+      <rect x="0" y="0" width="112" height="30" rx="8" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+      <circle cx="12" cy="15" r="3.5" fill="#2A6647" />
+      <text x="24" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#2A6647">Docker CIS</text>
     </g>
-    <g transform="translate(404, 0)">
-      <rect x="0" y="0" width="190" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
-      <circle cx="18" cy="17" r="4" fill="#B84E26" />
-      <text x="30" y="21" class="badge-text-l" fill="#1C232B">CI/CD &amp; Actions</text>
-      <text x="145" y="21" class="mono-l" fill="#B84E26">SARIF</text>
+    <g transform="translate(233, 0)">
+      <rect x="0" y="0" width="108" height="30" rx="8" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+      <circle cx="12" cy="15" r="3.5" fill="#B84E26" />
+      <text x="24" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#B84E26">SARIF 2.1.0</text>
     </g>
-    <g transform="translate(606, 0)">
-      <rect x="0" y="0" width="190" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
-      <circle cx="18" cy="17" r="4" fill="#2A6647" />
-      <text x="30" y="21" class="badge-text-l" fill="#1C232B">Python &amp; Bash</text>
-      <text x="135" y="21" class="mono-l" fill="#2A6647">0 CVEs</text>
+    <g transform="translate(349, 0)">
+      <rect x="0" y="0" width="95" height="30" rx="8" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+      <circle cx="12" cy="15" r="3.5" fill="#266A8C" />
+      <text x="24" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#266A8C">Python 3.12</text>
+    </g>
+  </g>
+
+  <!-- Location & Coordinates -->
+  <g transform="translate(38, 275)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="11" fill="#718096">
+      <tspan fill="#2A6647">●</tspan> Open to Global Remote Roles  ·  Bucaramanga, Colombia  ·  <tspan fill="#B84E26">h3n-x.dev</tspan>
+    </text>
+  </g>
+
+  <!-- Metric Badges Row -->
+  <g transform="translate(38, 316)">
+    <rect x="0" y="0" width="82" height="22" rx="5" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1" />
+    <text x="41" y="14" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#2A6647" font-weight="600" text-anchor="middle">100% Tests</text>
+
+    <rect x="90" y="0" width="102" height="22" rx="5" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1" />
+    <text x="141" y="14" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#B84E26" font-weight="600" text-anchor="middle">CIS Benchmark</text>
+
+    <rect x="200" y="0" width="95" height="22" rx="5" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1" />
+    <text x="247" y="14" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#266A8C" font-weight="600" text-anchor="middle">CycloneDX 1.5</text>
+
+    <rect x="303" y="0" width="105" height="22" rx="5" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1" />
+    <text x="355" y="14" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#5A6A80" font-weight="600" text-anchor="middle">Idempotent Bash</text>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: INTERACTIVE HUD TERMINAL ================= -->
+  <g transform="translate(465, 30)">
+    <!-- Terminal Outer Frame -->
+    <rect x="0" y="0" width="418" height="308" rx="12" fill="url(#termGradL)" stroke="#CCD2DA" stroke-width="1.2" />
+    
+    <!-- Title Bar -->
+    <path d="M 0 12 Q 0 0, 12 0 L 406 0 Q 418 0, 418 12 L 418 34 L 0 34 Z" fill="#EAE0D1" />
+    <circle cx="18" cy="17" r="4.5" fill="#DC2626" opacity="0.8" />
+    <circle cx="34" cy="17" r="4.5" fill="#D97706" opacity="0.8" />
+    <circle cx="50" cy="17" r="4.5" fill="#059669" opacity="0.8" />
+    <text x="209" y="21" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#4B5563" text-anchor="middle">h3n@parchment: ~/devops-defense</text>
+
+    <!-- Terminal Output -->
+    <g transform="translate(18, 56)">
+      <text x="0" y="0" class="term-code-l" fill="#B84E26">$</text>
+      <text x="14" y="0" class="term-code-l" fill="#1C232B">dockerward --audit live-runtime</text>
+      <text x="0" y="19" class="term-code-l" fill="#2A6647">✓ Docker Engine API connected (/var/run/docker.sock)</text>
+      <text x="0" y="36" class="term-code-l" fill="#4B5563">→ CIS v1.6.0: cgroups memory=512M cpu=1.0 pids=200</text>
+      <text x="0" y="53" class="term-code-l" fill="#4B5563">→ Capabilities: bounding set dropped · seccomp active</text>
+
+      <text x="0" y="80" class="term-code-l" fill="#B84E26">$</text>
+      <text x="14" y="80" class="term-code-l" fill="#1C232B">repo-secret-auditor --history --sbom</text>
+      <text x="0" y="99" class="term-code-l" fill="#2A6647">✓ Git log -p audited: 0 leaked tokens found</text>
+      <text x="0" y="116" class="term-code-l" fill="#4B5563">→ CycloneDX 1.5 SBOM generated · CVSS v3.1 checked</text>
+      <text x="0" y="133" class="term-code-l" fill="#266A8C">→ SARIF 2.1.0 exported to GitHub Code Scanning</text>
+
+      <text x="0" y="160" class="term-code-l" fill="#B84E26">$</text>
+      <text x="14" y="160" class="term-code-l" fill="#1C232B">secuscan-api --posture-score</text>
+      <text x="0" y="179" class="term-code-l" fill="#2A6647">✓ Posture Score: 98/100 (Grade A+) · Anti-SSRF Guard</text>
+
+      <text x="0" y="206" class="term-code-l" fill="#B84E26">$</text>
+      <text x="14" y="206" class="term-code-l" fill="#1C232B">archforge --verify-idempotency</text>
+      <text x="0" y="225" class="term-code-l" fill="#2A6647">✓ 28 modules converged · systemd &amp; nftables synced</text>
+
+      <text x="0" y="246" class="term-code-l" fill="#B84E26">h3n@parchment ~ % <tspan fill="#2A6647" class="cursor-l">█</tspan></text>
     </g>
   </g>
 </svg>

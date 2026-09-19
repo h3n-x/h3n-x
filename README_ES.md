@@ -8,13 +8,13 @@
 
 <p align="center">
   <a href="https://h3n-x.netlify.app/">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Ingenier%C3%ADa+DevOps+%26+Infraestructura;Hardening+del+Kernel+Linux+%7C+cgroups+%26+systemd;Auditor%C3%ADa+CIS+Docker+Benchmark+v1.6.0+en+Runtime;Quality+Gates+de+CI%2FCD+%7C+OASIS+SARIF+2.1.0;Automatizaci%C3%B3n+Predecible+con+Bash+Idempotente&font=JetBrains+Mono&center=true&width=560&height=44&duration=4000&pause=1200&color=F4A261&background=0E141D00" alt="Typing Title">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Ingenier%C3%ADa+DevOps+%26+Infraestructura+Linux;Auditor%C3%ADa+CIS+Docker+Benchmark+v1.6.0;Hardening+de+Kernel+Linux+%7C+cgroups+%26+systemd;Quality+Gates+en+CI%2FCD+%7C+OASIS+SARIF+2.1.0;Automatizaci%C3%B3n+Predecible+con+Bash+Idempotente;Relays+de+Cero-Conocimiento+%7C+AES-256-GCM&font=JetBrains+Mono&center=true&width=620&height=44&duration=4000&pause=1200&color=F4A261&background=0E141D00" alt="Headline Animado">
   </a>
 </p>
 
 <p align="center">
   <a href="https://h3n-x.netlify.app/">
-    <img src="https://img.shields.io/badge/Portafolio-h3n--x.dev-F4A261?style=for-the-badge&logo=safari&logoColor=black" alt="Portfolio">
+    <img src="https://img.shields.io/badge/Portafolio-h3n--x.dev-F4A261?style=for-the-badge&logo=safari&logoColor=black" alt="Portafolio">
   </a>
   <a href="https://www.linkedin.com/in/h3n-x">
     <img src="https://img.shields.io/badge/LinkedIn-h3n--x-266A8C?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -31,29 +31,49 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
-    <img src="assets/divider-dark.svg" alt="Divider" width="100%">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
   </picture>
 </p>
 
 ### 🌌 Filosofía de Ingeniería
 
-> *"Comprender el sistema operativo desde sus primitivas del kernel para construir pipelines cloud-native resilientes, reforzados y automatizados."*
+> *"Entender los sistemas desde las primitivas de su kernel para construir pipelines nativos de la nube resilientes, blindados y automatizados."*
 
-Trabajo en la intersección entre la **administración de sistemas Linux**, la **seguridad en tiempo de ejecución de contenedores** y la **automatización backend**. Mi objetivo es erradicar la configuración manual frágil mediante automatización predecible, cumplimiento estricto de políticas de seguridad y arquitecturas reproducibles.
+Opero en la convergencia de la **ingeniería de sistemas Linux**, la **seguridad en tiempo de ejecución de contenedores** y la **automatización backend**. Mi trabajo elimina la fragilidad operativa mediante automatización predecible, políticas estrictas y arquitecturas reproducibles.
 
-* **Foco Técnico:** Ingeniería DevOps & DevSecOps, Seguridad de Contenedores en Runtime (CIS Benchmarks), Endurecimiento de Linux (cgroups, capabilities, seccomp) y Quality Gates automatizados en CI/CD.
-* **Valores de Ingeniería:** Ejecución determinista, cero dependencias con CVEs, diseño con cierre por fallo (*fail-closed*) y reporte formal de seguridad (OASIS SARIF 2.1.0 & CycloneDX SBOM).
-* **Disponibilidad:** Abierto a roles remotos globales · DevOps / DevSecOps Engineer.
+* **Foco Principal:** Ingeniería DevOps & DevSecOps, Seguridad de Contenedores (CIS Benchmarks), Hardening de Kernel Linux (`cgroups`, capacidades, `seccomp BPF`) y Quality Gates automatizados en CI/CD.
+* **Valores de Ingeniería:** Ejecución determinista, dependencias con 0 CVEs, diseño cerrado ante fallos (*fail-closed*) y reportes de seguridad bajo estándares formales (OASIS SARIF 2.1.0 & CycloneDX SBOM).
+* **Estado Actual:** Disponible para roles remotos globales · Junior DevOps / DevSecOps Engineer.
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
-    <img src="assets/divider-dark.svg" alt="Divider" width="100%">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
   </picture>
 </p>
 
-### 🛠️ Sistemas Destacados & Repositorios Principales
+### 🛡️ Arquitectura de Defensa en Profundidad
+
+Los sistemas construidos a continuación se interconectan para formar un ecosistema de confianza cero (*zero-trust*) de 5 capas:
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/defense-in-depth-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/defense-in-depth-light.svg">
+    <img src="assets/defense-in-depth-dark.svg" alt="Arquitectura de Defensa en Profundidad" width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
+  </picture>
+</p>
+
+### 🛠️ Sistemas Destacados y Repositorios Principales
 
 <table width="100%" border="0" cellpadding="0" cellspacing="8">
   <tr>
@@ -122,62 +142,111 @@ Trabajo en la intersección entre la **administración de sistemas Linux**, la *
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
-    <img src="assets/divider-dark.svg" alt="Divider" width="100%">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
   </picture>
 </p>
 
-### ⚡ Capacidades Técnicas & Stack por Capas
+### ⚡ Capacidades Técnicas y Stack
 
 ```yaml
-Capa 01 [Sistemas Operativos & Kernel]:
-  Distribuciones: Arch Linux, Debian, Ubuntu LTS
-  Núcleo: daemons systemd, cgroups v1/v2, namespaces, capabilities, seccomp BPF
-  Automatización: Bash idempotente, scripts de shell, firewall nftables
+Capa 01 [Sistemas y Hardening de Kernel]:
+  Sistemas Operativos: Arch Linux, Debian, Ubuntu LTS
+  Primitivas de Kernel: demonios systemd, cgroups v1/v2, namespaces, capacidades Linux, seccomp BPF
+  Automatización y Red: Bash idempotente, firewall nftables, conformidad con ShellCheck
 
-Capa 02 [Contenedores & Runtime]:
-  Motores: Docker Engine API, Docker Compose
-  Estándares: CIS Docker Benchmark v1.6.0, Hardening no-root, cuotas de recursos
-  Calidad: Multi-stage slim builds, imágenes base con 0 CVEs
+Capa 02 [Contenedores y Seguridad en Runtime]:
+  Motores: Docker Engine API (socket UNIX), Docker Compose
+  Estándares: CIS Docker Benchmark v1.6.0, Ejecución no-root, Cuotas de recursos
+  Optimización: Builds multi-etapa reducidos, imágenes base con 0 CVEs, Distroless
 
-Capa 03 [CI/CD & DevSecOps]:
-  Pipelines: Workflows reutilizables en GitHub Actions, hooks de pre-commit
-  Estándares de Seguridad: OASIS SARIF 2.1.0, CycloneDX 1.5 JSON SBOM, FIRST CVSS v3.1
-  Auditoría: Reglas Gitleaks, Google OSV API, pip-audit, filtros de entropía de Shannon
+Capa 03 [CI/CD y DevSecOps]:
+  Pipelines: Flujos de trabajo reutilizables en GitHub Actions, Hooks de pre-commit
+  Estándares de Seguridad: OASIS SARIF 2.1.0, SBOM CycloneDX 1.5 JSON, FIRST CVSS v3.1
+  Auditoría: Reglas de detección Gitleaks, API Google OSV, pip-audit, Detección por entropía Shannon
 
-Capa 04 [Backend & Programación de Sistemas]:
+Capa 04 [Backend y Sistemas Distribuidos]:
   Lenguajes: Python 3.12+, TypeScript, Bash
-  Frameworks: FastAPI, Pydantic v2, SQLAlchemy, Asyncio
-  Aseguramiento: Pytest (más del 85% de cobertura), tipado estricto con Mypy, Ruff
+  Frameworks: FastAPI, Pydantic v2, SQLAlchemy, Colas asíncronas Celery, Redis, PostgreSQL 16
+  Aseguramiento de Calidad: Pytest (>85% cobertura de suite), Tipado estricto con Mypy, Linter Ruff
+
+Capa 05 [Criptografía y Comunicaciones de Confianza Cero]:
+  Estándares: WebCrypto API, Cifrado simétrico AES-256-GCM, Intercambio de claves ECDH P-256
+  Arquitectura: Servidor de retransmisión Zero-RAM, WebSockets efímeros, Ratchets en memoria
 ```
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
-    <img src="assets/divider-dark.svg" alt="Divider" width="100%">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
   </picture>
 </p>
 
-### 📡 Evidencia Técnica Verificada & Cobertura de Pruebas
+### 📡 Estándares de Calidad y Evidencia Verificada
 
-| Herramienta / Proyecto | Estándares & Certificación | Pruebas Automatizadas | Vulnerabilidades (CVEs) |
-| :--- | :--- | :---: | :---: |
-| **DockerWard** | CIS Docker v1.6.0 · OASIS SARIF 2.1.0 | 71 Tests (100% Reglas) | 0 CVEs |
-| **repo-secret-auditor** | CycloneDX 1.5 SBOM · FIRST CVSS v3.1 | 74 Tests (91% Cobertura) | 0 CVEs |
-| **secuscan-api** | OASIS SARIF 2.1.0 · Anti-SSRF Guard | 86 Tests (100% Éxito) | 0 CVEs |
-| **archforge** | 28 Módulos · Bash Idempotente · SemVer | Suite de Comprobación Automatizada | 0 CVEs |
-| **portfolio** | Astro 5 · Tailwind v4 · Accesibilidad WCAG AA | Pruebas E2E Playwright/CDP | 0 CVEs |
-| **chat-anonimo** | WebCrypto AES-256-GCM · Relay Cero-RAM | 40 Suites (Pytest/Vitest) | 0 CVEs |
+| Sistema / Herramienta | Estándares y Especificaciones | Pruebas Automatizadas | CVEs en Dependencias | Formato de Salida |
+| :--- | :--- | :---: | :---: | :---: |
+| **[DockerWard](https://github.com/h3n-x/DockerWard)** | CIS Docker Benchmark v1.6.0 | 71 Pruebas (100% Reglas) | 0 CVEs | OASIS SARIF 2.1.0 |
+| **[repo-secret-auditor](https://github.com/h3n-x/repo-secret-auditor)** | CycloneDX 1.5 SBOM · FIRST CVSS v3.1 | 74 Pruebas (91% Cob) | 0 CVEs | SARIF 2.1.0 + JSON |
+| **[secuscan-api](https://github.com/h3n-x/secuscan-api)** | Filtro Anti-SSRF · OWASP Top 10 | 86 Pruebas (100% Aprob) | 0 CVEs | REST API / JSON |
+| **[archforge](https://github.com/h3n-x/archforge)** | 28 Módulos · Bash Idempotente · SemVer | Suite de Sanidad Automática | 0 CVEs | Configuración Nativa |
+| **[portfolio](https://github.com/h3n-x/portfolio)** | Astro 5 · Tailwind v4 · Accesibilidad WCAG AA | Suite E2E Playwright | 0 CVEs | Web Estática (Netlify) |
+| **[chat-anonimo](https://github.com/h3n-x/chat-anonimo)** | WebCrypto AES-256-GCM · Relay Cero-RAM | 40 Suites (Pytest/Vitest) | 0 CVEs | WSS Efímero |
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
-    <img src="assets/divider-dark.svg" alt="Divider" width="100%">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
+  </picture>
+</p>
+
+### 🚀 Evaluación Rápida en Terminal
+
+Para auditar o probar los sistemas directamente en tu terminal:
+
+```bash
+# 1. Auditar tus contenedores locales activos contra CIS Benchmark v1.6.0
+git clone https://github.com/h3n-x/DockerWard.git
+cd DockerWard && pip install -e . && dockerward --help
+
+# 2. Auditar el historial de Git en busca de credenciales y generar SBOM CycloneDX
+git clone https://github.com/h3n-x/repo-secret-auditor.git
+cd repo-secret-auditor && pip install -e . && secret-auditor --help
+
+# 3. Explorar los 28 módulos idempotentes de hardening para Arch Linux
+git clone https://github.com/h3n-x/archforge.git
+cd archforge && ./archforge.sh --help
+```
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
+  </picture>
+</p>
+
+### 📊 Actividad en GitHub e Indicadores
+
+<p align="center">
+  <a href="https://github.com/h3n-x">
+    <img src="https://github-readme-stats.vercel.app/api?username=h3n-x&show_icons=true&title_color=F4A261&text_color=CBD5E1&icon_color=5EBAA0&bg_color=0E141D&border_color=1D2A3B&hide_border=false" alt="Estadísticas de GitHub" height="165" />
+  </a>
+  <a href="https://github.com/h3n-x">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h3n-x&layout=compact&title_color=F4A261&text_color=CBD5E1&bg_color=0E141D&border_color=1D2A3B&hide_border=false" alt="Lenguajes Principales" height="165" />
+  </a>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
+    <img src="assets/divider-dark.svg" alt="Separador" width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <sub>Diseñado con la paleta <b>Twilight Sky &amp; Warm Lantern</b> (Estudio Ghibli) · Creado para resiliencia, reproducibilidad y precisión.</sub><br>
-  <sub>© 2026 Henry Pacheco (h3n-x) · <a href="https://h3n-x.netlify.app/">h3n-x.netlify.app</a></sub>
+  <sub>Diseñado con la paleta <b>Cielo Crepuscular y Farol Cálido</b> de Studio Ghibli · Construido para resiliencia, reproducibilidad y precisión.</sub><br>
+  <sub>© 2026 Henry Pacheco (h3n-x) · <a href="https://h3n-x.netlify.app/">h3n-x.dev</a></sub>
 </p>

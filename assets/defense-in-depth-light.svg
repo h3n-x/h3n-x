@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F4" />
+      <stop offset="100%" stop-color="#F3ECE1" />
+    </linearGradient>
+    <linearGradient id="neonLineL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#266A8C" />
+      <stop offset="25%" stop-color="#2A6647" />
+      <stop offset="50%" stop-color="#B84E26" />
+      <stop offset="75%" stop-color="#2A6647" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="916" height="276" rx="16" fill="url(#archBgLight)" stroke="#CCD2DA" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(28, 28)">
+    <text font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#2A6647" letter-spacing="1.2px">DEFENSE-IN-DEPTH INFRASTRUCTURE ARCHITECTURE</text>
+    <text y="18" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="400" fill="#5A6A80">How Henry Pacheco's core engineered systems integrate to form a hardened zero-trust ecosystem</text>
+  </g>
+
+  <!-- Flow Connector Bar -->
+  <path d="M 60 148 L 860 148" stroke="url(#neonLineL)" stroke-width="2" stroke-dasharray="6,4" opacity="0.6" />
+
+  <!-- 5 Layer Boxes -->
+  <!-- Layer 1: Host & Kernel -->
+  <g transform="translate(24, 75)">
+    <rect width="160" height="175" rx="10" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+    <rect width="160" height="4" rx="2" fill="#266A8C" />
+    <text x="12" y="24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#266A8C">LAYER 01: HOST</text>
+    <text x="12" y="44" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="800" fill="#1C232B">archforge</text>
+    <text x="12" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#2A6647">Linux Kernel Hardening</text>
+    <line x1="12" y1="72" x2="148" y2="72" stroke="#E2E8F0" stroke-width="1" />
+    <text x="12" y="90" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• cgroups v1/v2 limits</text>
+    <text x="12" y="108" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• systemd daemons</text>
+    <text x="12" y="126" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• nftables firewall</text>
+    <text x="12" y="144" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• 28 idempotent modules</text>
+    <rect x="12" y="152" width="136" height="15" rx="4" fill="#F3ECE1" />
+    <text x="80" y="163" font-family="'JetBrains Mono', monospace" font-size="8" fill="#475569" text-anchor="middle">Foundational OS</text>
+  </g>
+
+  <!-- Layer 2: Container Runtime -->
+  <g transform="translate(199, 75)">
+    <rect width="160" height="175" rx="10" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+    <rect width="160" height="4" rx="2" fill="#2A6647" />
+    <text x="12" y="24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2A6647">LAYER 02: RUNTIME</text>
+    <text x="12" y="44" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="800" fill="#1C232B">DockerWard</text>
+    <text x="12" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#2A6647">CIS Benchmark Audit</text>
+    <line x1="12" y1="72" x2="148" y2="72" stroke="#E2E8F0" stroke-width="1" />
+    <text x="12" y="90" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Docker Engine API</text>
+    <text x="12" y="108" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• CIS v1.6.0 live rules</text>
+    <text x="12" y="126" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• seccomp &amp; caps drops</text>
+    <text x="12" y="144" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• SARIF export &amp; CLI</text>
+    <rect x="12" y="152" width="136" height="15" rx="4" fill="#F3ECE1" />
+    <text x="80" y="163" font-family="'JetBrains Mono', monospace" font-size="8" fill="#2A6647" text-anchor="middle">Runtime Guard</text>
+  </g>
+
+  <!-- Layer 3: CI/CD & Supply Chain -->
+  <g transform="translate(374, 75)">
+    <rect width="160" height="175" rx="10" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+    <rect width="160" height="4" rx="2" fill="#B84E26" />
+    <text x="12" y="24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#B84E26">LAYER 03: CI/CD GATE</text>
+    <text x="12" y="44" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13.5" font-weight="800" fill="#1C232B">secret-auditor</text>
+    <text x="12" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#B84E26">Supply Chain Security</text>
+    <line x1="12" y1="72" x2="148" y2="72" stroke="#E2E8F0" stroke-width="1" />
+    <text x="12" y="90" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• GitHub Actions Gate</text>
+    <text x="12" y="108" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• CycloneDX 1.5 SBOM</text>
+    <text x="12" y="126" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• OASIS SARIF 2.1.0</text>
+    <text x="12" y="144" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Shannon entropy</text>
+    <rect x="12" y="152" width="136" height="15" rx="4" fill="#F3ECE1" />
+    <text x="80" y="163" font-family="'JetBrains Mono', monospace" font-size="8" fill="#B84E26" text-anchor="middle">Pipeline Blocker</text>
+  </g>
+
+  <!-- Layer 4: Perimeter & Network -->
+  <g transform="translate(549, 75)">
+    <rect width="160" height="175" rx="10" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+    <rect width="160" height="4" rx="2" fill="#2A6647" />
+    <text x="12" y="24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2A6647">LAYER 04: PERIMETER</text>
+    <text x="12" y="44" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="800" fill="#1C232B">secuscan-api</text>
+    <text x="12" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#2A6647">EASM &amp; Anti-SSRF</text>
+    <line x1="12" y1="72" x2="148" y2="72" stroke="#E2E8F0" stroke-width="1" />
+    <text x="12" y="90" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• FastAPI Microservices</text>
+    <text x="12" y="108" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Anti-SSRF / DNS rebinding</text>
+    <text x="12" y="126" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Security posture score</text>
+    <text x="12" y="144" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Celery async queue</text>
+    <rect x="12" y="152" width="136" height="15" rx="4" fill="#F3ECE1" />
+    <text x="80" y="163" font-family="'JetBrains Mono', monospace" font-size="8" fill="#2A6647" text-anchor="middle">Network Boundary</text>
+  </g>
+
+  <!-- Layer 5: Zero-Knowledge Comms -->
+  <g transform="translate(724, 75)">
+    <rect width="172" height="175" rx="10" fill="#FFFFFF" stroke="#CCD2DA" stroke-width="1.2" />
+    <rect width="172" height="4" rx="2" fill="#7C3AED" />
+    <text x="12" y="24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#7C3AED">LAYER 05: PRIVACY</text>
+    <text x="12" y="44" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="800" fill="#1C232B">chat-anonimo</text>
+    <text x="12" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7C3AED">End-to-End Encryption</text>
+    <line x1="12" y1="72" x2="160" y2="72" stroke="#E2E8F0" stroke-width="1" />
+    <text x="12" y="90" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• WebCrypto AES-GCM</text>
+    <text x="12" y="108" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• ECDH P-256 key ex</text>
+    <text x="12" y="126" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Zero-RAM server relay</text>
+    <text x="12" y="144" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#475569">• Ephemeral WebSockets</text>
+    <rect x="12" y="152" width="148" height="15" rx="4" fill="#F3ECE1" />
+    <text x="86" y="163" font-family="'JetBrains Mono', monospace" font-size="8" fill="#7C3AED" text-anchor="middle">Zero-Trust Payload</text>
+  </g>
+</svg>
