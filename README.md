@@ -7,24 +7,14 @@
 </p>
 
 <p align="center">
-  <a href="https://h3n-x.netlify.app/">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=DevOps+%26+Linux+Infrastructure+Engineering;CIS+Docker+Benchmark+v1.6.0+Runtime+Audit;Linux+Kernel+Hardening+%7C+cgroups+%26+systemd;CI%2FCD+Quality+Gates+%7C+OASIS+SARIF+2.1.0;Predictable+Automation+with+Idempotent+Bash;Zero-Knowledge+Relays+%7C+AES-256-GCM&font=JetBrains+Mono&center=true&width=620&height=44&duration=4000&pause=1200&color=F4A261&background=0E141D00" alt="Typing Headline">
-  </a>
+  <a href="https://h3n-x.netlify.app/"><img src="https://readme-typing-svg.herokuapp.com/?lines=DevOps+%26+Linux+Infrastructure+Engineering;CIS+Docker+Benchmark+v1.6.0+Runtime+Audit;Linux+Kernel+Hardening+%7C+cgroups+%26+systemd;CI%2FCD+Quality+Gates+%7C+OASIS+SARIF+2.1.0;Predictable+Automation+with+Idempotent+Bash;Zero-Knowledge+Relays+%7C+AES-256-GCM&font=JetBrains+Mono&center=true&width=620&height=44&duration=4000&pause=1200&color=F4A261&background=0E141D00" alt="Typing Headline"></a>
 </p>
 
 <p align="center">
-  <a href="https://h3n-x.netlify.app/">
-    <img src="https://img.shields.io/badge/Portfolio-h3n--x.dev-F4A261?style=for-the-badge&logo=safari&logoColor=black" alt="Portfolio">
-  </a>
-  <a href="https://www.linkedin.com/in/h3n-x">
-    <img src="https://img.shields.io/badge/LinkedIn-h3n--x-266A8C?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://github.com/h3n-x">
-    <img src="https://img.shields.io/badge/GitHub-h3n--x-151F2C?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-  <a href="https://github.com/h3n-x/h3n-x/blob/main/README_ES.md">
-    <img src="https://img.shields.io/badge/Idioma-Español-5EBAA0?style=for-the-badge&logo=googletranslate&logoColor=black" alt="Spanish Version">
-  </a>
+  <a href="https://h3n-x.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-h3n--x.dev-F4A261?style=for-the-badge&logo=safari&logoColor=black" alt="Portfolio"></a>&nbsp;
+  <a href="https://www.linkedin.com/in/h3n-x"><img src="https://img.shields.io/badge/LinkedIn-h3n--x-266A8C?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;
+  <a href="https://github.com/h3n-x"><img src="https://img.shields.io/badge/GitHub-h3n--x-151F2C?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>&nbsp;
+  <a href="https://github.com/h3n-x/h3n-x/blob/main/README_ES.md"><img src="https://img.shields.io/badge/Idioma-Español-5EBAA0?style=for-the-badge&logo=googletranslate&logoColor=black" alt="Spanish Version"></a>
 </p>
 
 <p align="center">
@@ -79,60 +69,42 @@ The engineered systems below interconnect into a cohesive, five-layer zero-trust
   <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/h3n-x/DockerWard">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-1-dockerward-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-1-dockerward-light.svg">
-          <img src="assets/card-1-dockerward-dark.svg" width="100%" alt="DockerWard">
-        </picture>
+        <img src="assets/card-1-dockerward-dark.svg#gh-dark-mode-only" width="100%" alt="DockerWard">
+        <img src="assets/card-1-dockerward-light.svg#gh-light-mode-only" width="100%" alt="DockerWard">
       </a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/h3n-x/repo-secret-auditor">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-2-repo-secret-auditor-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-2-repo-secret-auditor-light.svg">
-          <img src="assets/card-2-repo-secret-auditor-dark.svg" width="100%" alt="repo-secret-auditor">
-        </picture>
+        <img src="assets/card-2-repo-secret-auditor-dark.svg#gh-dark-mode-only" width="100%" alt="repo-secret-auditor">
+        <img src="assets/card-2-repo-secret-auditor-light.svg#gh-light-mode-only" width="100%" alt="repo-secret-auditor">
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/h3n-x/secuscan-api">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-3-secuscan-api-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-3-secuscan-api-light.svg">
-          <img src="assets/card-3-secuscan-api-dark.svg" width="100%" alt="secuscan-api">
-        </picture>
+        <img src="assets/card-3-secuscan-api-dark.svg#gh-dark-mode-only" width="100%" alt="secuscan-api">
+        <img src="assets/card-3-secuscan-api-light.svg#gh-light-mode-only" width="100%" alt="secuscan-api">
       </a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/h3n-x/archforge">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-4-archforge-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-4-archforge-light.svg">
-          <img src="assets/card-4-archforge-dark.svg" width="100%" alt="archforge">
-        </picture>
+        <img src="assets/card-4-archforge-dark.svg#gh-dark-mode-only" width="100%" alt="archforge">
+        <img src="assets/card-4-archforge-light.svg#gh-light-mode-only" width="100%" alt="archforge">
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/h3n-x/portfolio">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-5-portfolio-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-5-portfolio-light.svg">
-          <img src="assets/card-5-portfolio-dark.svg" width="100%" alt="portfolio">
-        </picture>
+        <img src="assets/card-5-portfolio-dark.svg#gh-dark-mode-only" width="100%" alt="portfolio">
+        <img src="assets/card-5-portfolio-light.svg#gh-light-mode-only" width="100%" alt="portfolio">
       </a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/h3n-x/chat-anonimo">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-6-chat-anonimo-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-6-chat-anonimo-light.svg">
-          <img src="assets/card-6-chat-anonimo-dark.svg" width="100%" alt="chat-anonimo">
-        </picture>
+        <img src="assets/card-6-chat-anonimo-dark.svg#gh-dark-mode-only" width="100%" alt="chat-anonimo">
+        <img src="assets/card-6-chat-anonimo-light.svg#gh-light-mode-only" width="100%" alt="chat-anonimo">
       </a>
     </td>
   </tr>
@@ -227,15 +199,14 @@ cd archforge && ./archforge.sh --help
   </picture>
 </p>
 
-### 📊 GitHub Activity & Insights
+### 📊 Engineering Health & Ecosystem Insights
 
 <p align="center">
-  <a href="https://github.com/h3n-x">
-    <img src="https://github-readme-stats.vercel.app/api?username=h3n-x&show_icons=true&title_color=F4A261&text_color=CBD5E1&icon_color=5EBAA0&bg_color=0E141D&border_color=1D2A3B&hide_border=false" alt="GitHub Stats" height="165" />
-  </a>
-  <a href="https://github.com/h3n-x">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h3n-x&layout=compact&title_color=F4A261&text_color=CBD5E1&bg_color=0E141D&border_color=1D2A3B&hide_border=false" alt="Top Languages" height="165" />
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/github-metrics-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/github-metrics-light.svg">
+    <img src="assets/github-metrics-dark.svg" alt="Engineering Metrics & Ecosystem Distribution" width="100%">
+  </picture>
 </p>
 
 <p align="center">

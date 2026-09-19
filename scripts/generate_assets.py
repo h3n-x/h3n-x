@@ -960,33 +960,215 @@ def generate_card_light(p):
 def get_divider_dark():
     return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 26" width="100%" height="26">
   <defs>
-    <linearGradient id="divGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="divGradDark" gradientUnits="userSpaceOnUse" x1="40" y1="13" x2="880" y2="13">
       <stop offset="0%" stop-color="#151F2C" stop-opacity="0" />
-      <stop offset="25%" stop-color="#1D2A3B" />
-      <stop offset="50%" stop-color="#F4A261" stop-opacity="0.8" />
-      <stop offset="75%" stop-color="#5EBAA0" stop-opacity="0.6" />
+      <stop offset="25%" stop-color="#1D2A3B" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#F4A261" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#5EBAA0" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#151F2C" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <line x1="40" y1="13" x2="880" y2="13" stroke="url(#divGradDark)" stroke-width="1.4" stroke-linecap="round" />
-  <circle cx="460" cy="13" r="3.5" fill="#F4A261" />
-  <circle cx="460" cy="13" r="1.5" fill="#FFFFFF" />
+  <rect x="40" y="12" width="840" height="2" rx="1" fill="url(#divGradDark)" />
+  <circle cx="460" cy="13" r="4" fill="#F4A261" />
+  <circle cx="460" cy="13" r="1.8" fill="#FFFFFF" />
 </svg>'''
 
 def get_divider_light():
     return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 26" width="100%" height="26">
   <defs>
-    <linearGradient id="divGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="divGradLight" gradientUnits="userSpaceOnUse" x1="40" y1="13" x2="880" y2="13">
       <stop offset="0%" stop-color="#CCD2DA" stop-opacity="0" />
-      <stop offset="25%" stop-color="#CCD2DA" />
-      <stop offset="50%" stop-color="#B84E26" stop-opacity="0.7" />
-      <stop offset="75%" stop-color="#2A6647" stop-opacity="0.6" />
+      <stop offset="25%" stop-color="#CCD2DA" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#B84E26" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#2A6647" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#CCD2DA" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <line x1="40" y1="13" x2="880" y2="13" stroke="url(#divGradLight)" stroke-width="1.4" stroke-linecap="round" />
-  <circle cx="460" cy="13" r="3.5" fill="#B84E26" />
-  <circle cx="460" cy="13" r="1.5" fill="#FFFFFF" />
+  <rect x="40" y="12" width="840" height="2" rx="1" fill="url(#divGradLight)" />
+  <circle cx="460" cy="13" r="4" fill="#B84E26" />
+  <circle cx="460" cy="13" r="1.8" fill="#FFFFFF" />
+</svg>'''
+
+
+# -------------------------------------------------------------
+# 5. GITHUB METRICS & ECOSYSTEM INFOGRAPHIC (Dark & Light)
+# -------------------------------------------------------------
+def get_metrics_dark():
+    return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 165" width="100%" height="165">
+  <defs>
+    <linearGradient id="metBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E141D" />
+      <stop offset="100%" stop-color="#151F2C" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="916" height="161" rx="14" fill="url(#metBgDark)" stroke="#1D2A3B" stroke-width="1.5" />
+
+  <!-- LEFT PANEL: ENGINEERING HEALTH STATS -->
+  <g transform="translate(24, 20)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#5EBAA0" letter-spacing="1px">ENGINEERING HEALTH &amp; CI/CD AUDIT</text>
+    
+    <!-- 4 Metric Cards Grid -->
+    <g transform="translate(0, 18)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="98" height="85" rx="8" fill="#182333" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#F3F6F9" text-anchor="middle">6</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#5EBAA0" text-anchor="middle">REPOSITORIES</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Hardened &amp; Pinned</text>
+      </g>
+      <!-- Card 2 -->
+      <g transform="translate(108, 0)">
+        <rect width="98" height="85" rx="8" fill="#182333" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="#5EBAA0" text-anchor="middle">100%</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#CBD5E1" text-anchor="middle">TEST PASS</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Pytest · Vitest</text>
+      </g>
+      <!-- Card 3 -->
+      <g transform="translate(216, 0)">
+        <rect width="98" height="85" rx="8" fill="#182333" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#F4A261" text-anchor="middle">0</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#F4A261" text-anchor="middle">CVES IN DEPS</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">pip-audit · OSV</text>
+      </g>
+      <!-- Card 4 -->
+      <g transform="translate(324, 0)">
+        <rect width="98" height="85" rx="8" fill="#182333" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="19" font-weight="800" fill="#64B5F6" text-anchor="middle">A+</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#64B5F6" text-anchor="middle">POSTURE (98)</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Anti-SSRF Guard</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="465" y1="20" x2="465" y2="140" stroke="#1D2A3B" stroke-width="1.2" stroke-dasharray="3,3" />
+
+  <!-- RIGHT PANEL: ECOSYSTEM BREAKDOWN -->
+  <g transform="translate(485, 20)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#F4A261" letter-spacing="1px">TECHNICAL ECOSYSTEM DISTRIBUTION</text>
+    
+    <!-- Multi-Segment Progress Bar -->
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="410" height="14" rx="7" fill="#182333" />
+      <!-- Shell 38% = 155.8px -->
+      <path d="M 0 7 Q 0 0, 7 0 L 155.8 0 L 155.8 14 L 7 14 Q 0 14, 0 7 Z" fill="#5EBAA0" />
+      <!-- Python 34% = 139.4px -->
+      <rect x="157.8" y="0" width="137.4" height="14" fill="#64B5F6" />
+      <!-- TypeScript 20% = 82px -->
+      <rect x="297.2" y="0" width="80" height="14" fill="#F4A261" />
+      <!-- Astro/Others 8% = 32.8px -->
+      <path d="M 379.2 0 L 403 0 Q 410 0, 410 7 Q 410 14, 403 14 L 379.2 14 Z" fill="#A78BFA" />
+    </g>
+
+    <!-- Legend Items -->
+    <g transform="translate(0, 58)">
+      <!-- Item 1 -->
+      <circle cx="6" cy="6" r="4.5" fill="#5EBAA0" />
+      <text x="16" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#F3F6F9">Shell / Linux</text>
+      <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94A3B8">38% (archforge, bash)</text>
+
+      <!-- Item 2 -->
+      <circle cx="116" cy="6" r="4.5" fill="#64B5F6" />
+      <text x="126" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#F3F6F9">Python 3.12</text>
+      <text x="126" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94A3B8">34% (FastAPI, Docker API)</text>
+
+      <!-- Item 3 -->
+      <circle cx="236" cy="6" r="4.5" fill="#F4A261" />
+      <text x="246" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#F3F6F9">TypeScript</text>
+      <text x="246" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94A3B8">20% (Astro 5, WebCrypto)</text>
+
+      <!-- Item 4 -->
+      <circle cx="340" cy="6" r="4.5" fill="#A78BFA" />
+      <text x="350" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#F3F6F9">CI / CD</text>
+      <text x="350" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94A3B8">8% (SARIF, SBOM)</text>
+    </g>
+  </g>
+</svg>'''
+
+def get_metrics_light():
+    return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 165" width="100%" height="165">
+  <defs>
+    <linearGradient id="metBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F4" />
+      <stop offset="100%" stop-color="#F3ECE1" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="916" height="161" rx="14" fill="url(#metBgLight)" stroke="#CCD2DA" stroke-width="1.5" />
+
+  <!-- LEFT PANEL: ENGINEERING HEALTH STATS -->
+  <g transform="translate(24, 20)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#2A6647" letter-spacing="1px">ENGINEERING HEALTH &amp; CI/CD AUDIT</text>
+    
+    <!-- 4 Metric Cards Grid -->
+    <g transform="translate(0, 18)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="98" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#1C232B" text-anchor="middle">6</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#2A6647" text-anchor="middle">REPOSITORIES</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5A6A80" text-anchor="middle">Hardened &amp; Pinned</text>
+      </g>
+      <!-- Card 2 -->
+      <g transform="translate(108, 0)">
+        <rect width="98" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="#2A6647" text-anchor="middle">100%</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#1C232B" text-anchor="middle">TEST PASS</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5A6A80" text-anchor="middle">Pytest · Vitest</text>
+      </g>
+      <!-- Card 3 -->
+      <g transform="translate(216, 0)">
+        <rect width="98" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#B84E26" text-anchor="middle">0</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#B84E26" text-anchor="middle">CVES IN DEPS</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5A6A80" text-anchor="middle">pip-audit · OSV</text>
+      </g>
+      <!-- Card 4 -->
+      <g transform="translate(324, 0)">
+        <rect width="98" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+        <text x="49" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="19" font-weight="800" fill="#266A8C" text-anchor="middle">A+</text>
+        <text x="49" y="52" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#266A8C" text-anchor="middle">POSTURE (98)</text>
+        <text x="49" y="68" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5A6A80" text-anchor="middle">Anti-SSRF Guard</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="465" y1="20" x2="465" y2="140" stroke="#CCD2DA" stroke-width="1.2" stroke-dasharray="3,3" />
+
+  <!-- RIGHT PANEL: ECOSYSTEM BREAKDOWN -->
+  <g transform="translate(485, 20)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#B84E26" letter-spacing="1px">TECHNICAL ECOSYSTEM DISTRIBUTION</text>
+    
+    <!-- Multi-Segment Progress Bar -->
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="410" height="14" rx="7" fill="#EAE0D1" />
+      <path d="M 0 7 Q 0 0, 7 0 L 155.8 0 L 155.8 14 L 7 14 Q 0 14, 0 7 Z" fill="#2A6647" />
+      <rect x="157.8" y="0" width="137.4" height="14" fill="#266A8C" />
+      <rect x="297.2" y="0" width="80" height="14" fill="#B84E26" />
+      <path d="M 379.2 0 L 403 0 Q 410 0, 410 7 Q 410 14, 403 14 L 379.2 14 Z" fill="#7C3AED" />
+    </g>
+
+    <!-- Legend Items -->
+    <g transform="translate(0, 58)">
+      <circle cx="6" cy="6" r="4.5" fill="#2A6647" />
+      <text x="16" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#1C232B">Shell / Linux</text>
+      <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5A6A80">38% (archforge, bash)</text>
+
+      <circle cx="116" cy="6" r="4.5" fill="#266A8C" />
+      <text x="126" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#1C232B">Python 3.12</text>
+      <text x="126" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5A6A80">34% (FastAPI, Docker API)</text>
+
+      <circle cx="236" cy="6" r="4.5" fill="#B84E26" />
+      <text x="246" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#1C232B">TypeScript</text>
+      <text x="246" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5A6A80">20% (Astro 5, WebCrypto)</text>
+
+      <circle cx="340" cy="6" r="4.5" fill="#7C3AED" />
+      <text x="350" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#1C232B">CI / CD</text>
+      <text x="350" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5A6A80">8% (SARIF, SBOM)</text>
+    </g>
+  </g>
 </svg>'''
 
 
@@ -1001,6 +1183,8 @@ def main():
         "defense-in-depth-light.svg": get_defense_architecture_light(),
         "divider-dark.svg": get_divider_dark(),
         "divider-light.svg": get_divider_light(),
+        "github-metrics-dark.svg": get_metrics_dark(),
+        "github-metrics-light.svg": get_metrics_light(),
     }
 
     # Add the 6 project cards (dark and light)
@@ -1026,7 +1210,7 @@ def main():
             success = False
 
     if success:
-        print("\nAll 18 profile SVG assets generated and 100% XML validated successfully!")
+        print("\nAll 20 profile SVG assets generated and 100% XML validated successfully!")
     else:
         print("\nSome assets failed validation.")
 
