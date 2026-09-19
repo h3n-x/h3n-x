@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients: Howl's Twilight Sky -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E141D" />
+      <stop offset="50%" stop-color="#151F2C" />
+      <stop offset="100%" stop-color="#182333" />
+    </linearGradient>
+
+    <!-- Warm Lantern Glow -->
+    <radialGradient id="lanternGlow" cx="80%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="#F4A261" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0E141D" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Mint Aurora Glow -->
+    <radialGradient id="auroraGlow" cx="20%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#5EBAA0" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#0E141D" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5EBAA0" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#F4A261" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#64B5F6" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 34px; fill: #F3F6F9; letter-spacing: -0.5px; }
+    .tagline { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 15px; fill: #CBD5E1; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11.5px; fill: #94A3B8; }
+    .badge-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; }
+    .status-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #5EBAA0; letter-spacing: 0.5px; }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.15); }
+    }
+    @keyframes floatLight {
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.25; }
+      50% { transform: translateY(-6px) translateX(4px); opacity: 0.75; }
+    }
+    .firefly-1 { animation: floatLight 6s ease-in-out infinite; transform-origin: center; }
+    .firefly-2 { animation: floatLight 8s ease-in-out 2s infinite; transform-origin: center; }
+    .firefly-3 { animation: floatLight 7s ease-in-out 4s infinite; transform-origin: center; }
+    .pulse-dot { animation: pulse 3s ease-in-out infinite; transform-origin: 68px 46px; }
+  </style>
+
+  <!-- Base Card -->
+  <rect x="2" y="2" width="896" height="276" rx="18" fill="url(#bgGrad)" stroke="#1D2A3B" stroke-width="1.5" />
+  <rect x="2" y="2" width="896" height="276" rx="18" fill="url(#lanternGlow)" />
+  <rect x="2" y="2" width="896" height="276" rx="18" fill="url(#auroraGlow)" />
+  <rect x="2" y="2" width="896" height="276" rx="18" fill="none" stroke="url(#borderGrad)" stroke-width="1" opacity="0.6" />
+
+  <!-- Subtle Constellation / Geometric Lines -->
+  <g stroke="#CBD5E1" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3,3">
+    <line x1="50" y1="90" x2="250" y2="90" />
+    <line x1="250" y1="90" x2="330" y2="40" />
+    <line x1="650" y1="180" x2="820" y2="180" />
+    <line x1="720" y1="120" x2="820" y2="180" />
+    <line x1="80" y1="210" x2="280" y2="210" />
+  </g>
+
+  <!-- Ghibli Twilight Fireflies / Floating Lantern Nodes -->
+  <circle cx="180" cy="55" r="2" fill="#F4A261" class="firefly-1" />
+  <circle cx="760" cy="65" r="2.5" fill="#5EBAA0" class="firefly-2" />
+  <circle cx="820" cy="140" r="1.8" fill="#F4A261" class="firefly-3" />
+  <circle cx="120" cy="220" r="2.2" fill="#64B5F6" class="firefly-1" />
+  <circle cx="680" cy="230" r="1.8" fill="#5EBAA0" class="firefly-2" />
+
+  <!-- Top System Badge -->
+  <g transform="translate(50, 32)">
+    <rect x="0" y="0" width="310" height="26" rx="13" fill="#151F2C" stroke="#1D2A3B" stroke-width="1" />
+    <circle cx="18" cy="13" r="4.5" fill="#5EBAA0" class="pulse-dot" />
+    <circle cx="18" cy="13" r="2" fill="#FFFFFF" />
+    <text x="32" y="17" class="status-text">DEVOPS &amp; RUNTIME SECURITY</text>
+    <text x="212" y="17" class="mono" fill="#CBD5E1">·</text>
+    <text x="224" y="17" class="mono" fill="#F4A261">h3n-x.dev</text>
+  </g>
+
+  <!-- Header Content -->
+  <text x="50" y="105" class="title">Henry Pacheco</text>
+  <text x="315" y="105" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="500" fill="#94A3B8">/ h3n-x</text>
+
+  <text x="50" y="136" class="tagline">
+    DevOps &amp; Infrastructure Engineer <tspan fill="#F4A261">✦</tspan> Linux Internals, Hardened Containers &amp; DevSecOps
+  </text>
+  <text x="50" y="160" class="mono" fill="#94A3B8">
+    Automating resilient systems from kernel primitives to strict CI/CD quality gates.
+  </text>
+
+  <!-- Bottom Pills: 4 Pillars of Stack -->
+  <g transform="translate(50, 195)">
+    <!-- Pill 1: Linux -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="185" height="34" rx="8" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
+      <circle cx="18" cy="17" r="4" fill="#CBD5E1" />
+      <text x="30" y="21" class="badge-text" fill="#F3F6F9">Linux &amp; systemd</text>
+      <text x="142" y="21" class="mono" fill="#94A3B8">cgroups</text>
+    </g>
+
+    <!-- Pill 2: Docker -->
+    <g transform="translate(197, 0)">
+      <rect x="0" y="0" width="195" height="34" rx="8" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
+      <circle cx="18" cy="17" r="4" fill="#64B5F6" />
+      <text x="30" y="21" class="badge-text" fill="#F3F6F9">Docker &amp; CIS v1.6</text>
+      <text x="156" y="21" class="mono" fill="#64B5F6">audit</text>
+    </g>
+
+    <!-- Pill 3: CI/CD -->
+    <g transform="translate(404, 0)">
+      <rect x="0" y="0" width="190" height="34" rx="8" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
+      <circle cx="18" cy="17" r="4" fill="#F4A261" />
+      <text x="30" y="21" class="badge-text" fill="#F3F6F9">CI/CD &amp; Actions</text>
+      <text x="145" y="21" class="mono" fill="#F4A261">SARIF</text>
+    </g>
+
+    <!-- Pill 4: Python & Bash -->
+    <g transform="translate(606, 0)">
+      <rect x="0" y="0" width="190" height="34" rx="8" fill="#182333" stroke="#1D2A3B" stroke-width="1" />
+      <circle cx="18" cy="17" r="4" fill="#5EBAA0" />
+      <text x="30" y="21" class="badge-text" fill="#F3F6F9">Python &amp; Bash</text>
+      <text x="135" y="21" class="mono" fill="#5EBAA0">0 CVEs</text>
+    </g>
+  </g>
+
+  <!-- Aesthetic Japanese Kanji Watermark in Ghibli Style (黄昏 / Twilight) -->
+  <text x="830" y="100" font-family="sans-serif" font-size="44" font-weight="900" fill="#CBD5E1" fill-opacity="0.04" text-anchor="middle">黄昏</text>
+</svg>

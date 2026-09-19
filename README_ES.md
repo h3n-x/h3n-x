@@ -2,19 +2,19 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-    <img src="assets/header-dark.svg" alt="Henry Pacheco (h3n-x) - DevOps & Systems Security Engineer" width="100%">
+    <img src="assets/header-dark.svg" alt="Henry Pacheco (h3n-x) - Ingeniero DevOps & Seguridad de Sistemas" width="100%">
   </picture>
 </p>
 
 <p align="center">
   <a href="https://h3n-x.netlify.app/">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=DevOps+%26+Infrastructure+Engineering;Linux+Kernel+Hardening+%7C+cgroups+%26+systemd;CIS+Docker+Benchmark+v1.6.0+Runtime+Audit;CI%2FCD+Quality+Gates+%7C+OASIS+SARIF+2.1.0;Predictable+Automation+with+Idempotent+Bash&font=JetBrains+Mono&center=true&width=560&height=44&duration=4000&pause=1200&color=F4A261&background=0E141D00" alt="Typing Title">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Ingenier%C3%ADa+DevOps+%26+Infraestructura;Hardening+del+Kernel+Linux+%7C+cgroups+%26+systemd;Auditor%C3%ADa+CIS+Docker+Benchmark+v1.6.0+en+Runtime;Quality+Gates+de+CI%2FCD+%7C+OASIS+SARIF+2.1.0;Automatizaci%C3%B3n+Predecible+con+Bash+Idempotente&font=JetBrains+Mono&center=true&width=560&height=44&duration=4000&pause=1200&color=F4A261&background=0E141D00" alt="Typing Title">
   </a>
 </p>
 
 <p align="center">
   <a href="https://h3n-x.netlify.app/">
-    <img src="https://img.shields.io/badge/Portfolio-h3n--x.dev-F4A261?style=for-the-badge&logo=safari&logoColor=black" alt="Portfolio">
+    <img src="https://img.shields.io/badge/Portafolio-h3n--x.dev-F4A261?style=for-the-badge&logo=safari&logoColor=black" alt="Portfolio">
   </a>
   <a href="https://www.linkedin.com/in/h3n-x">
     <img src="https://img.shields.io/badge/LinkedIn-h3n--x-266A8C?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -22,8 +22,8 @@
   <a href="https://github.com/h3n-x">
     <img src="https://img.shields.io/badge/GitHub-h3n--x-151F2C?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="https://github.com/h3n-x/h3n-x/blob/main/README_ES.md">
-    <img src="https://img.shields.io/badge/Idioma-Español-5EBAA0?style=for-the-badge&logo=googletranslate&logoColor=black" alt="Spanish Version">
+  <a href="https://github.com/h3n-x/h3n-x/blob/main/README.md">
+    <img src="https://img.shields.io/badge/Language-English-5EBAA0?style=for-the-badge&logo=googletranslate&logoColor=black" alt="English Version">
   </a>
 </p>
 
@@ -35,15 +35,15 @@
   </picture>
 </p>
 
-### 🌌 Engineering Philosophy
+### 🌌 Filosofía de Ingeniería
 
-> *"Understanding systems from their kernel primitives to build resilient, hardened, and automated cloud-native pipelines."*
+> *"Comprender el sistema operativo desde sus primitivas del kernel para construir pipelines cloud-native resilientes, reforzados y automatizados."*
 
-I operate at the intersection of **Linux systems administration**, **runtime container security**, and **backend automation**. My work centers on eliminating fragile manual configuration through predictable automation, strict policy enforcement, and reproducible architectures.
+Trabajo en la intersección entre la **administración de sistemas Linux**, la **seguridad en tiempo de ejecución de contenedores** y la **automatización backend**. Mi objetivo es erradicar la configuración manual frágil mediante automatización predecible, cumplimiento estricto de políticas de seguridad y arquitecturas reproducibles.
 
-* **Core Focus:** DevOps & DevSecOps Engineering, Container Runtime Security (CIS Benchmarks), Linux Hardening (cgroups, capabilities, seccomp), and Automated CI/CD Quality Gates.
-* **Engineering Values:** Deterministic execution, zero-CVE dependencies, fail-closed design, and formal security reporting (OASIS SARIF 2.1.0 & CycloneDX SBOM).
-* **Current Status:** Open to Global Remote Roles · Junior DevOps / DevSecOps Engineer.
+* **Foco Técnico:** Ingeniería DevOps & DevSecOps, Seguridad de Contenedores en Runtime (CIS Benchmarks), Endurecimiento de Linux (cgroups, capabilities, seccomp) y Quality Gates automatizados en CI/CD.
+* **Valores de Ingeniería:** Ejecución determinista, cero dependencias con CVEs, diseño con cierre por fallo (*fail-closed*) y reporte formal de seguridad (OASIS SARIF 2.1.0 & CycloneDX SBOM).
+* **Disponibilidad:** Abierto a roles remotos globales · DevOps / DevSecOps Engineer.
 
 <p align="center">
   <picture>
@@ -53,7 +53,7 @@ I operate at the intersection of **Linux systems administration**, **runtime con
   </picture>
 </p>
 
-### 🛠️ Featured Systems & Core Repositories
+### 🛠️ Sistemas Destacados & Repositorios Principales
 
 <table width="100%" border="0" cellpadding="0" cellspacing="8">
   <tr>
@@ -126,28 +126,28 @@ I operate at the intersection of **Linux systems administration**, **runtime con
   </picture>
 </p>
 
-### ⚡ Technical Capabilities & Stack
+### ⚡ Capacidades Técnicas & Stack por Capas
 
 ```yaml
-Layer 01 [Systems & Kernel]:
-  OS: Arch Linux, Debian, Ubuntu LTS
-  Core: systemd daemons, cgroups v1/v2, namespaces, capabilities, seccomp BPF
-  Automation: Idempotent Bash, Shell Scripting, nftables firewall
+Capa 01 [Sistemas Operativos & Kernel]:
+  Distribuciones: Arch Linux, Debian, Ubuntu LTS
+  Núcleo: daemons systemd, cgroups v1/v2, namespaces, capabilities, seccomp BPF
+  Automatización: Bash idempotente, scripts de shell, firewall nftables
 
-Layer 02 [Containers & Runtime]:
-  Engines: Docker Engine API, Docker Compose
-  Standards: CIS Docker Benchmark v1.6.0, Non-Root Hardening, Resource Quotas
-  Quality: Multi-stage slim builds, zero CVE base images
+Capa 02 [Contenedores & Runtime]:
+  Motores: Docker Engine API, Docker Compose
+  Estándares: CIS Docker Benchmark v1.6.0, Hardening no-root, cuotas de recursos
+  Calidad: Multi-stage slim builds, imágenes base con 0 CVEs
 
-Layer 03 [CI/CD & DevSecOps]:
-  Pipelines: GitHub Actions Reusable Workflows, Pre-commit hooks
-  Security Standards: OASIS SARIF 2.1.0, CycloneDX 1.5 JSON SBOM, FIRST CVSS v3.1
-  Auditing: Gitleaks rules, Google OSV API, pip-audit, Shannon entropy detection
+Capa 03 [CI/CD & DevSecOps]:
+  Pipelines: Workflows reutilizables en GitHub Actions, hooks de pre-commit
+  Estándares de Seguridad: OASIS SARIF 2.1.0, CycloneDX 1.5 JSON SBOM, FIRST CVSS v3.1
+  Auditoría: Reglas Gitleaks, Google OSV API, pip-audit, filtros de entropía de Shannon
 
-Layer 04 [Backend & Systems Programming]:
-  Languages: Python 3.12+, TypeScript, Bash
+Capa 04 [Backend & Programación de Sistemas]:
+  Lenguajes: Python 3.12+, TypeScript, Bash
   Frameworks: FastAPI, Pydantic v2, SQLAlchemy, Asyncio
-  Assurance: Pytest (85%+ suite coverage), Mypy strict typing, Ruff
+  Aseguramiento: Pytest (más del 85% de cobertura), tipado estricto con Mypy, Ruff
 ```
 
 <p align="center">
@@ -158,16 +158,16 @@ Layer 04 [Backend & Systems Programming]:
   </picture>
 </p>
 
-### 📡 Verified Evidence & Test Coverage
+### 📡 Evidencia Técnica Verificada & Cobertura de Pruebas
 
-| Tool | Status & Standards | Automated Tests | CVEs in Deps |
+| Herramienta / Proyecto | Estándares & Certificación | Pruebas Automatizadas | Vulnerabilidades (CVEs) |
 | :--- | :--- | :---: | :---: |
-| **DockerWard** | CIS Docker v1.6.0 · OASIS SARIF 2.1.0 | 71 Tests (100% Rules) | 0 CVEs |
-| **repo-secret-auditor** | CycloneDX 1.5 SBOM · FIRST CVSS v3.1 | 74 Tests (91% Cov) | 0 CVEs |
-| **secuscan-api** | OASIS SARIF 2.1.0 · Anti-SSRF Guard | 86 Tests (100% Pass) | 0 CVEs |
-| **archforge** | 28 Modules · Idempotent Bash · SemVer | Automated Sanity Suite | 0 CVEs |
-| **portfolio** | Astro 5 · Tailwind v4 · WCAG AA Access | E2E Playwright/CDP | 0 CVEs |
-| **chat-anonimo** | WebCrypto AES-256-GCM · Zero-RAM Relay | 40 Suites (Pytest/Vitest) | 0 CVEs |
+| **DockerWard** | CIS Docker v1.6.0 · OASIS SARIF 2.1.0 | 71 Tests (100% Reglas) | 0 CVEs |
+| **repo-secret-auditor** | CycloneDX 1.5 SBOM · FIRST CVSS v3.1 | 74 Tests (91% Cobertura) | 0 CVEs |
+| **secuscan-api** | OASIS SARIF 2.1.0 · Anti-SSRF Guard | 86 Tests (100% Éxito) | 0 CVEs |
+| **archforge** | 28 Módulos · Bash Idempotente · SemVer | Suite de Comprobación Automatizada | 0 CVEs |
+| **portfolio** | Astro 5 · Tailwind v4 · Accesibilidad WCAG AA | Pruebas E2E Playwright/CDP | 0 CVEs |
+| **chat-anonimo** | WebCrypto AES-256-GCM · Relay Cero-RAM | 40 Suites (Pytest/Vitest) | 0 CVEs |
 
 <p align="center">
   <picture>
@@ -178,6 +178,6 @@ Layer 04 [Backend & Systems Programming]:
 </p>
 
 <p align="center">
-  <sub>Crafted with the <b>Twilight Sky &amp; Warm Lantern</b> palette · Built for resilience, reproducibility and precision.</sub><br>
+  <sub>Diseñado con la paleta <b>Twilight Sky &amp; Warm Lantern</b> (Estudio Ghibli) · Creado para resiliencia, reproducibilidad y precisión.</sub><br>
   <sub>© 2026 Henry Pacheco (h3n-x) · <a href="https://h3n-x.netlify.app/">h3n-x.netlify.app</a></sub>
 </p>

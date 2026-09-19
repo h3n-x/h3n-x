@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 170" width="100%" height="170">
+  <defs>
+    <linearGradient id="cardBg_light_6-chat-anonimo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FBF9F4" />
+    </linearGradient>
+    <radialGradient id="cardGlow_light_6-chat-anonimo" cx="90%" cy="15%" r="45%">
+      <stop offset="0%" stop-color="#2A6647" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="427" height="167" rx="14" fill="url(#cardBg_light_6-chat-anonimo)" stroke="#E5E7EB" stroke-width="1.5" />
+  <rect x="1.5" y="1.5" width="427" height="167" rx="14" fill="url(#cardGlow_light_6-chat-anonimo)" />
+  <line x1="24" y1="1.5" x2="120" y2="1.5" stroke="#2A6647" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Top Category Badge -->
+  <g transform="translate(24, 20)">
+    <text font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2A6647" letter-spacing="0.8px">ZERO-KNOWLEDGE PRIVACY SUITE</text>
+  </g>
+
+  <!-- Title & Icon -->
+  <g transform="translate(24, 52)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="17" font-weight="800" fill="#1C232B">chat-anonimo</text>
+    <text x="375" y="0" font-size="16" text-anchor="end">🔒</text>
+  </g>
+
+  <!-- Description -->
+  <g transform="translate(24, 76)">
+    <text x="0" y="12" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#3B4654">Zero-Knowledge ephemeral messaging with Blind Relay architecture.</text>
+    <text x="0" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#566373">WebCrypto AES-256-GCM + ECDH in RAM, voice scrambler &amp; decoy mode.</text>
+  </g>
+
+  <!-- Tags -->
+  
+      <g transform="translate(24, 132)">
+        <rect x="0" y="0" width="124.5" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
+        <text x="62.25" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">WebCrypto AES-256</text>
+      </g>
+      <g transform="translate(156.5, 132)">
+        <rect x="0" y="0" width="79.0" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
+        <text x="39.5" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">ECDH P-256</text>
+      </g>
+      <g transform="translate(243.5, 132)">
+        <rect x="0" y="0" width="105.0" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
+        <text x="52.5" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">Zero-RAM Relay</text>
+      </g>
+      <g transform="translate(356.5, 132)">
+        <rect x="0" y="0" width="85.5" height="22" rx="6" fill="#F3ECE1" stroke="#E5E7EB" stroke-width="1" />
+        <text x="42.75" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#3B4654" font-weight="500" text-anchor="middle">FLAG_SECURE</text>
+      </g>
+</svg>
