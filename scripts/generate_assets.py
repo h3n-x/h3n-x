@@ -820,7 +820,7 @@ def generate_card_dark(p):
 
     tags_markup = "".join(tag_elements)
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 185" width="100%" height="185">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 185" width="100%" height="100%">
   <defs>
     <linearGradient id="cardBg_dark_{p['num']}" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#121A24" />
@@ -901,7 +901,7 @@ def generate_card_light(p):
 
     tags_markup = "".join(tag_elements)
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 185" width="100%" height="185">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 185" width="100%" height="100%">
   <defs>
     <linearGradient id="cardBg_light_{p['num']}" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" />
