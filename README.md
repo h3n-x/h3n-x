@@ -65,18 +65,32 @@ The engineered systems below interconnect into a cohesive, five-layer zero-trust
 
 ### 🛠️ Featured Systems & Core Repositories
 
-<p align="center">
-  <a href="https://github.com/h3n-x/DockerWard"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-1-dockerward-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-1-dockerward-light.svg"><img src="assets/card-1-dockerward-dark.svg" alt="DockerWard" width="435"></picture></a>&nbsp;
-  <a href="https://github.com/h3n-x/repo-secret-auditor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-2-repo-secret-auditor-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-2-repo-secret-auditor-light.svg"><img src="assets/card-2-repo-secret-auditor-dark.svg" alt="repo-secret-auditor" width="435"></picture></a>
-</p>
-<p align="center">
-  <a href="https://github.com/h3n-x/secuscan-api"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-3-secuscan-api-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-3-secuscan-api-light.svg"><img src="assets/card-3-secuscan-api-dark.svg" alt="secuscan-api" width="435"></picture></a>&nbsp;
-  <a href="https://github.com/h3n-x/archforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-4-archforge-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-4-archforge-light.svg"><img src="assets/card-4-archforge-dark.svg" alt="archforge" width="435"></picture></a>
-</p>
-<p align="center">
-  <a href="https://github.com/h3n-x/portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-5-portfolio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-5-portfolio-light.svg"><img src="assets/card-5-portfolio-dark.svg" alt="portfolio" width="435"></picture></a>&nbsp;
-  <a href="https://github.com/h3n-x/chat-anonimo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-6-chat-anonimo-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-6-chat-anonimo-light.svg"><img src="assets/card-6-chat-anonimo-dark.svg" alt="chat-anonimo" width="435"></picture></a>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/h3n-x/DockerWard"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-1-dockerward-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-1-dockerward-light.svg"><img src="assets/card-1-dockerward-dark.svg" alt="DockerWard" width="390"></picture></a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/h3n-x/repo-secret-auditor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-2-repo-secret-auditor-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-2-repo-secret-auditor-light.svg"><img src="assets/card-2-repo-secret-auditor-dark.svg" alt="repo-secret-auditor" width="390"></picture></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/h3n-x/secuscan-api"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-3-secuscan-api-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-3-secuscan-api-light.svg"><img src="assets/card-3-secuscan-api-dark.svg" alt="secuscan-api" width="390"></picture></a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/h3n-x/archforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-4-archforge-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-4-archforge-light.svg"><img src="assets/card-4-archforge-dark.svg" alt="archforge" width="390"></picture></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/h3n-x/portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-5-portfolio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-5-portfolio-light.svg"><img src="assets/card-5-portfolio-dark.svg" alt="portfolio" width="390"></picture></a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/h3n-x/chat-anonimo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-6-chat-anonimo-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-6-chat-anonimo-light.svg"><img src="assets/card-6-chat-anonimo-dark.svg" alt="chat-anonimo" width="390"></picture></a>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <picture>
